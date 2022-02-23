@@ -1,4 +1,5 @@
 import React from "react";
+import "./Business.css";
 
 const business = {
     imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
@@ -12,9 +13,9 @@ const business = {
     reviewCount: 90
 };
 
-class Welcome extends React.Component {
+class Business extends React.Component {
     render() {
-        (
+        return (
             <div className="Business">
                 <div className="image-container">
                     <img src={business.imageSrc} alt=''/>
@@ -35,4 +36,6 @@ class Welcome extends React.Component {
             </div>
         )
     }
-}
+};
+
+export default Business;
